@@ -17,28 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LN-2X-uiW">
-                                <rect key="frame" x="60" y="252" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LN-2X-uiW">
+                                <rect key="frame" x="111" y="274" width="97.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-rl-1zP">
-                                <rect key="frame" x="60" y="122" width="200" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpk-Jz-zdo">
+                                <rect key="frame" x="74" y="334" width="171" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-rl-1zP">
+                                <rect key="frame" x="71" y="150" width="177" height="30"/>
                                 <state key="normal" title="Quiero una hamburguesa!"/>
                                 <connections>
                                     <action selector="dameUnaHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="6YV-I8-Op7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpk-Jz-zdo">
-                                <rect key="frame" x="60" y="317" width="200" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9LN-2X-uiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SeM-G9-rgg"/>
+                            <constraint firstItem="gVi-rl-1zP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TrP-we-epb"/>
+                            <constraint firstItem="9LN-2X-uiW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uit-UQ-eZD"/>
+                            <constraint firstItem="zpk-Jz-zdo" firstAttribute="top" secondItem="9LN-2X-uiW" secondAttribute="bottom" constant="39.5" id="YWv-i9-cdH"/>
+                            <constraint firstItem="zpk-Jz-zdo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEf-wz-PJh"/>
+                            <constraint firstItem="gVi-rl-1zP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="wxm-2t-kJe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nombreDeHamburguesa" destination="zpk-Jz-zdo" id="uKd-px-CMm"/>
+                        <outlet property="nombreDePais" destination="9LN-2X-uiW" id="I9s-7T-0vQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
