@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Una instancia de la clase ColeccionDePaises
+    let coleccionDePaises = ColeccionDePaises()
+    
+    // Una instancia de la clase ColeccionDeHamburguesas
+    let coleccionDeHamburguesas = ColeccionDeHamburguesas()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Un @IBAction para implementar cambiar de país y de hamburguesa
+    @IBAction func dameUnaHamburguesa() {
+        print("Cambiar de país y de hamburguesa")
+    }
 
 }
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Clase ColeccionDePaises
+// 1.- Clase ColeccionDePaises
 class ColeccionDePaises{
     
     // Arreglo con 25 países (mas de 20)
@@ -25,8 +25,8 @@ class ColeccionDePaises{
     }
 }
 
-// Clase ColeccionDeHamburguesa
-class ColeccionDeHamburguesa{
+// 2.- Clase ColeccionDeHamburguesas
+class ColeccionDeHamburguesas{
 
     // Arreglo con 25 hamburguesas (mas de 20)
     let hamburguesas: [String] = ["Hamburguesa 1", "Hamburguesa 2", "Hamburguesa 3", "Hamburguesa 4", "Hamburguesa 5",
