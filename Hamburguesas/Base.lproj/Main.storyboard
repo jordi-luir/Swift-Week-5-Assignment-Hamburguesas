@@ -30,7 +30,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVi-rl-1zP">
-                                <rect key="frame" x="71" y="150" width="177" height="30"/>
+                                <rect key="frame" x="71.5" y="150" width="177" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Quiero una hamburguesa!"/>
                                 <connections>
                                     <action selector="dameUnaHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="6YV-I8-Op7"/>

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // 1.- Clase ColeccionDePaises
 class ColeccionDePaises{
@@ -29,15 +30,39 @@ class ColeccionDePaises{
 class ColeccionDeHamburguesas{
 
     // Arreglo con 25 hamburguesas (mas de 20)
-    let hamburguesas: [String] = ["Hamburguesa 1", "Hamburguesa 2", "Hamburguesa 3", "Hamburguesa 4", "Hamburguesa 5",
-        "Hamburguesa 6", "Hamburguesa 7", "Hamburguesa 8", "Hamburguesa 9", "Hamburguesa 10",
-        "Hamburguesa 11", "Hamburguesa 12", "Hamburguesa 13", "Hamburguesa 14", "Hamburguesa 15",
-        "Hamburguesa 16", "Hamburguesa 17", "Hamburguesa 18", "Hamburguesa 19", "Hamburguesa 20",
-        "Hamburguesa 21", "Hamburguesa 22", "Hamburguesa 23", "Hamburguesa 24", "25"]
+    let hamburguesas: [String] = ["Grand McExtreme Original", "Big Mac",
+        "Cuarto de libra con Queso", "McRoyal Deluxe", "Big Double Cheese",
+        "Hamburguesa Simple", "Hamburguesa Clásica", "Hamburguesa con Queso",
+        "Grand Big Mac Chicken", "Hamburguesa CBO", "Big Chicken Supreme",
+        "McPollo", "Chicken Burger BBQ", "Chicken Burguer Kids",
+        "Whopper BBQ", "Whopper con Queso", "Whopper Doble con Queso",
+        "Hamburguesa con Queso y Tocino", "Whopper Angry", "Whopper Jr. con Queso",
+        "Rodeo Burger", "Big King", "Mega XT Queso y Tocino",
+        "Mega XT Clásica y Aguacate", "X-Treme Burger"]
     
     // Función para obtener una hamburguesa aleatoriamente
     func obtenHamburguesa( )->String{
         let posicion = Int( arc4random() ) % hamburguesas.count
         return hamburguesas[posicion]
+    }
+}
+
+// Clase Colores
+class Colores{
+    
+    // Arreglo con los distintos colores a considerar
+    let colores = [UIColor(red: 210/255, green: 90/255, blue: 45/255, alpha: 1),
+        UIColor(red: 40/255, green: 170/255, blue: 45/255, alpha: 1),
+        UIColor(red: 3/255, green: 180/255, blue: 90/255, alpha: 1),
+        UIColor(red: 210/255, green: 190/255, blue: 5/255, alpha: 1),
+        UIColor(red: 120/255, green: 120/255, blue: 50/255, alpha: 1),
+        UIColor(red: 130/255, green: 80/255, blue: 90/255, alpha: 1),
+        UIColor(red: 130/255, green: 130/255, blue: 130/255, alpha: 1),
+        UIColor(red: 3/255, green: 50/255, blue: 90/255, alpha: 1)]
+
+    // Función para obtener un color aleatorio
+    func regresaColorAleatorio() -> UIColor{
+        let posicion = Int( arc4random() ) % colores.count
+        return colores[posicion]
     }
 }

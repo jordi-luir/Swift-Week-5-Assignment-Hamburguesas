@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     // Una instancia de la clase ColeccionDeHamburguesas
     let coleccionDeHamburguesas = ColeccionDeHamburguesas()
+    
+    // Una instancia de la clase Colores
+    let colores = Colores()
 
     // Referencia a la etiqueta de Nombre de país
     @IBOutlet weak var nombreDePais: UILabel!
@@ -34,8 +37,12 @@ class ViewController: UIViewController {
 
     // Un @IBAction para implementar cambiar de país y de hamburguesa
     @IBAction func dameUnaHamburguesa() {
+        // Al presionar el botón debes cambiar el país y la hamburguesa que se despliegan en las etiquetas
         nombreDePais.text = coleccionDePaises.obtenPais()
         nombreDeHamburguesa.text = coleccionDeHamburguesas.obtenHamburguesa()
+        
+        // De manera opcional cambia el color de fondo de la vista
+        view.backgroundColor = colores.regresaColorAleatorio()
     }
 
 }
